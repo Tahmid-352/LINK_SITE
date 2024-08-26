@@ -1,0 +1,51 @@
+/* ButtonList.css */
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.button-list__button {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: none;
+  outline: none;
+}
+
+.button-list__button:hover {
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+  transform: translateY(-2px);
+}
+
+.button-list__button--clicked {
+  background: linear-gradient(135deg, #6c757d, #343a40);
+}
+
+@media (max-width: 600px) {
+  .button-list {
+    padding: 10px;
+  }
+
+  .button-list__button {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+  }
+}
